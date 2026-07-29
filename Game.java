@@ -16,28 +16,28 @@ public class Game extends Main {
         GameBoard = new String[8][8];
 
         for (int r = 0; r < 8; r++) {
-            GameBoard[1][r] = GREEN + " P " + RESET;
+            GameBoard[r][1] = GREEN + " P " + RESET;
         }
         for (int r = 0; r < 8; r++) {
-            GameBoard[6][r] = WHITE + " P " + RESET;
+            GameBoard[r][6] = WHITE + " P " + RESET;
         }
 
         GameBoard[0][0] = GREEN + " R " + RESET;
-        GameBoard[0][7] = GREEN + " R " + RESET;
-        GameBoard[7][0] = WHITE + " R " + RESET;
+        GameBoard[7][0] = GREEN + " R " + RESET;
+        GameBoard[0][7] = WHITE + " R " + RESET;
         GameBoard[7][7] = WHITE + " R " + RESET;
-        GameBoard[0][1] = GREEN + " N " + RESET;
-        GameBoard[0][6] = GREEN + " N " + RESET;
-        GameBoard[7][1] = WHITE + " N " + RESET;
-        GameBoard[7][6] = WHITE + " N " + RESET;
-        GameBoard[0][2] = GREEN + " B " + RESET;
-        GameBoard[0][5] = GREEN + " B " + RESET;
-        GameBoard[7][2] = WHITE + " B " + RESET;
-        GameBoard[7][5] = WHITE + " B " + RESET;
-        GameBoard[0][3] = GREEN + " Q " + RESET;
-        GameBoard[7][3] = WHITE + " Q " + RESET;
-        GameBoard[0][4] = GREEN + " K " + RESET;
-        GameBoard[7][4] = WHITE + " K " + RESET;
+        GameBoard[1][0] = GREEN + " N " + RESET;
+        GameBoard[6][0] = GREEN + " N " + RESET;
+        GameBoard[1][7] = WHITE + " N " + RESET;
+        GameBoard[6][7] = WHITE + " N " + RESET;
+        GameBoard[2][0] = GREEN + " B " + RESET;
+        GameBoard[5][0] = GREEN + " B " + RESET;
+        GameBoard[2][7] = WHITE + " B " + RESET;
+        GameBoard[5][7] = WHITE + " B " + RESET;
+        GameBoard[3][0] = GREEN + " Q " + RESET;
+        GameBoard[3][7] = WHITE + " Q " + RESET;
+        GameBoard[4][0] = GREEN + " K " + RESET;
+        GameBoard[4][7] = WHITE + " K " + RESET;
 
         for(int r = 0; r < 8; r++) {
             for(int c = 0; c < 8; c++) {
@@ -50,77 +50,78 @@ public class Game extends Main {
 
     public static void PrintBoard(){
 
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
             }
-                System.out.print(GameBoard[r][0]);
+                System.out.print(GameBoard[0][c]);
         }
         System.out.println();
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);
             }
-                System.out.print(GameBoard[r][1]);
+                System.out.print(GameBoard[1][c]);
         }
         System.out.println();
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
             }
-                System.out.print(GameBoard[r][2]);
+                System.out.print(GameBoard[2][c]);
         }
         System.out.println();
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);
             }
-                System.out.print(GameBoard[r][3]);
+                System.out.print(GameBoard[3][c]);
         }
         System.out.println();
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
             }
-                System.out.print(GameBoard[r][4]);
+                System.out.print(GameBoard[4][c]);
         }
         System.out.println();
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);
             }
-                System.out.print(GameBoard[r][5]);
+                System.out.print(GameBoard[5][c]);
         }
         System.out.println();
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
             }
-                System.out.print(GameBoard[r][6]);
+                System.out.print(GameBoard[6][c]);
         }
         System.out.println();
-        for (int r = 0; r < 8; r++) {
-            if (r % 2 == 0) {
+        for (int c = 0; c < 8; c++) {
+            if (c % 2 == 0) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);
             }
-                System.out.print(GameBoard[r][7]);
+                System.out.print(GameBoard[7][c]);
         }
         System.out.println(NORM);
     }
+
 }
