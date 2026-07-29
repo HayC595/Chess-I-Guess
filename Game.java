@@ -34,10 +34,10 @@ public class Game extends Main {
         GameBoard[5][0] = GREEN + " B " + RESET;
         GameBoard[2][7] = WHITE + " B " + RESET;
         GameBoard[5][7] = WHITE + " B " + RESET;
-        GameBoard[3][0] = GREEN + " Q " + RESET;
-        GameBoard[3][7] = WHITE + " Q " + RESET;
-        GameBoard[4][0] = GREEN + " K " + RESET;
-        GameBoard[4][7] = WHITE + " K " + RESET;
+        GameBoard[4][0] = GREEN + " Q " + RESET;
+        GameBoard[4][7] = WHITE + " Q " + RESET;
+        GameBoard[3][0] = GREEN + " K " + RESET;
+        GameBoard[3][7] = WHITE + " K " + RESET;
 
         for(int r = 0; r < 8; r++) {
             for(int c = 0; c < 8; c++) {
@@ -51,7 +51,7 @@ public class Game extends Main {
     public static void PrintBoard(){
 
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
@@ -60,7 +60,7 @@ public class Game extends Main {
         }
         System.out.println(NORM);
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);
@@ -69,7 +69,7 @@ public class Game extends Main {
         }
         System.out.println(NORM);
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
@@ -78,7 +78,7 @@ public class Game extends Main {
         }
         System.out.println(NORM);
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);
@@ -87,7 +87,7 @@ public class Game extends Main {
         }
         System.out.println(NORM);
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
@@ -96,7 +96,7 @@ public class Game extends Main {
         }
         System.out.println(NORM);
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);
@@ -105,7 +105,7 @@ public class Game extends Main {
         }
         System.out.println(NORM);
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(OFF_WHITE_BACKGROUND);
             } else {
                 System.out.print(BLACK_BACKGROUND);
@@ -114,7 +114,7 @@ public class Game extends Main {
         }
         System.out.println(NORM);
         for (int c = 0; c < 8; c++) {
-            if (c % 2 == 0) {
+            if (c % 2 == 1) {
                 System.out.print(BLACK_BACKGROUND);
             } else {
                 System.out.print(OFF_WHITE_BACKGROUND);

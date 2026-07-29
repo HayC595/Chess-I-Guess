@@ -38,6 +38,10 @@ public class Main{
         Pawn.MovePawnTwo(6,6);
         Game.PrintBoard();
         Bishop.MoveBishop(2, 0, 6, 4);
-        Game.PrintBoard(); 
+        Game.PrintBoard();
+        Queen.MoveQueen_Bishop(4, 0, 0, 4);
+        Game.PrintBoard();
+        Queen.MoveQueen_Rook(0, 4, 0, 6);
+        Game.PrintBoard();
     }
 }

@@ -1,5 +1,5 @@
 public class Bishop extends Game{
-    public static void MoveBishop(int r, int c, int newR, int newC) {
+    public static void MoveBishop(int r, int c, int newR, int newC){
         if (GameBoard[r][c].equals(GREEN + " B " + RESET) && (GameBoard[newR][newC].equals(WHITE + " B " + RESET) || GameBoard[newR][newC].equals("   ") || GameBoard[newR][newC].equals(WHITE + " P " + RESET) || GameBoard[newR][newC].equals(WHITE + " N " + RESET) || GameBoard[newR][newC].equals(WHITE + " R " + RESET) || GameBoard[newR][newC].equals(WHITE + " Q " + RESET))) {
             for(int i = 1; i < Math.abs(newR - r); i++){
                 if(newR > r && newC > c){
