@@ -33,8 +33,11 @@ public class Main{
         Game.PrintBoard();
         Rook.MoveRook(7, 2, 7, 6);
         Game.PrintBoard();
-        Rook.MoveRook(7, 6, 7, 1);
+        Pawn.MovePawnOne(3,1);
         Game.PrintBoard();
-        
+        Pawn.MovePawnTwo(6,6);
+        Game.PrintBoard();
+        Bishop.MoveBishop(2, 0, 6, 4);
+        Game.PrintBoard(); 
     }
 }
