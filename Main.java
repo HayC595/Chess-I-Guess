@@ -27,7 +27,13 @@ public class Main{
         //TEST
         Pawn.MovePawnTwo(0, 1);
         Game.PrintBoard();
-        Rook.MoveRook(0, 0, 0, 1);
+        Rook.MoveRook(0, 0, 0, 2);
+        Game.PrintBoard();
+        Rook.MoveRook(0, 2, 7, 2);
+        Game.PrintBoard();
+        Rook.MoveRook(7, 2, 7, 6);
+        Game.PrintBoard();
+        Rook.MoveRook(7, 6, 7, 1);
         Game.PrintBoard();
         
     }
