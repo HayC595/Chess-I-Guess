@@ -23,5 +23,20 @@ public class Main{
 
         Game.BoardSetup();
         Game.PrintBoard();
+
+        //TEST
+        Pawn.MovePawnTwo(0, 1);
+        Game.PrintBoard();
+        Pawn.MovePawnOne(0, 3);
+        Game.PrintBoard();
+        Pawn.MovePawnOne(0, 4);
+        Game.PrintBoard();
+        Pawn.PawnCapture(0, 5, 1, 6);
+        Game.PrintBoard();
+        Pawn.PawnCapture(1, 6, 2, 7);
+        Game.PrintBoard();
+        Pawn.PawnPromotion(2, 7, "Q");
+        Game.PrintBoard();
+        
     }
 }
